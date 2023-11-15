@@ -1,4 +1,4 @@
-const apiKey = 'dff6dc4b60e4139673c5b9e1';
+const apiKey = '6b5ed2bf6314a7d4d5e2621a';
 
 const fromCurrencySelect = document.getElementById("fromCurrency");
 const toCurrencySelect = document.getElementById("toCurrency");
@@ -72,14 +72,34 @@ function convertCurrency() {
         curToCur1.textContent = "";
         curToCur2.textContent = "";
     });
+    fromCurrencyAmountInput.addEventListener("input", function (event) {
+        event.target.value = event.target.value.replace(/-/g, '');
+        convertCurrency.call(event.target);
+    });
+    
+    toCurrencyAmountInput.addEventListener("input", function (event) {
+        event.target.value = event.target.value.replace(/-/g, ''); 
+        convertCurrency.call(event.target);
+    });
+    
+    fromCurrencyAmountInput.addEventListener("keypress", function (event) {
+        if (event.key === '-') {
+            event.preventDefault();
+        }
+    });
+    
+    toCurrencyAmountInput.addEventListener("keypress", function (event) {
+        if (event.key === '-') {
+            event.preventDefault();
+        }
+    });
+    
 };
-fromCurrencyAmountInput.addEventListener("input", handleAmountInput);
-toCurrencyAmountInput.addEventListener("input", handleAmountInput);
-function handleAmountInput(event) {
-    let inputValue = event.target.value;
-    inputValue = inputValue.replace(/-/g, '');
-    event.target.value = inputValue;
-    convertCurrency.call(event.target);
-}
+
+
+
+
+
+
 
 
