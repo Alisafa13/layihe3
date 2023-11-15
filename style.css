@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top {
+    background-color: #F5F5F6;
+    height: 50px;
+}
+
+.bottom {
+    padding-top: 50px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    padding-top: 15px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #959BA4;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+.block1,
+.block2,
+td {
+    border-radius: 3px;
+}
+
+.fromCurrencyAmount,
+.toCurrencyAmount {
+    padding-top: 10px;
+    padding-left: 15px;
+    width: 259px;
+    height: 115px;
+    border: 1px solid #E5E5E5;
+    padding-bottom: 40px;
+    font-size: 36px;
+    border-radius: 3px;
+}
+
+.h2 {
+    padding-bottom: 30px;
+}
+
+.about {
+    font-size: 12px;
+}
+
+.about {
+    color: #9F9F9F;
+    margin-bottom: 6px;
+    border: 0;
+    border-radius: 3px;
+}
+
+button {
+    font-size: 11px;
+    font-weight: 500;
+    width: 58px;
+    height: 33px;
+    position: relative;
+    bottom: 6px;
+    background-color: white;
+    border: 0px;
+    border-radius: 3px;
+}
+
+.rub:hover,
+.usd:hover,
+.eur:hover,
+.azn:hover {
+    color: white;
+    background-color: purple;
+}
+
+input {
+    font-weight: 600;
+    outline: none;
+}
+
+.bank {
+    color: black;
+}
+
+#curToCur1,
+#curToCur2 {
+    font-size: 12px;
+    position: relative;
+    bottom: 30px;
+    left: 15px;
+    color: #C6C6C6;
+}
+
+select {
+    margin-bottom: 10px;
+}
