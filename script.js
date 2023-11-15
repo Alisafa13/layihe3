@@ -11,27 +11,7 @@ fromCurrencySelect.addEventListener("change", convertCurrency);
 fromCurrencyAmountInput.addEventListener("input", convertCurrency);
 toCurrencySelect.addEventListener("change", convertCurrency);
 toCurrencyAmountInput.addEventListener("input", convertCurrency);
-fromCurrencyAmountInput.addEventListener("input", function (event) {
-    event.target.value = event.target.value.replace(/-/g, '');
-    convertCurrency.call(event.target);
-});
 
-toCurrencyAmountInput.addEventListener("input", function (event) {
-    event.target.value = event.target.value.replace(/-/g, '');
-    convertCurrency.call(event.target);
-});
-
-fromCurrencyAmountInput.addEventListener("keydown", function (event) {
-    if (event.key === '-') {
-        event.preventDefault();
-    }
-});
-
-toCurrencyAmountInput.addEventListener("keydown", function (event) {
-    if (event.key === '-') {
-        event.preventDefault();
-    }
-});
 function convertCurrency() {
     const fromCurrency = fromCurrencySelect.value;
     const toCurrency = toCurrencySelect.value;
