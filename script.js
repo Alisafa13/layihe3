@@ -1,4 +1,4 @@
-const apiKey = '6b5ed2bf6314a7d4d5e2621a';
+const apiKey = 'a9256b83300fb9058e7cb910';
 
 const fromCurrencySelect = document.getElementById("fromCurrency");
 const toCurrencySelect = document.getElementById("toCurrency");
