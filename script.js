@@ -1,4 +1,4 @@
-const apiKey = '96dc55614288c56c7a99dd42';
+const apiKey = 'dff6dc4b60e4139673c5b9e1';
 
 const fromCurrencySelect = document.getElementById("fromCurrency");
 const toCurrencySelect = document.getElementById("toCurrency");
@@ -73,3 +73,13 @@ function convertCurrency() {
         curToCur2.textContent = "";
     });
 };
+fromCurrencyAmountInput.addEventListener("input", handleAmountInput);
+toCurrencyAmountInput.addEventListener("input", handleAmountInput);
+function handleAmountInput(event) {
+    let inputValue = event.target.value;
+    inputValue = inputValue.replace(/-/g, '');
+    event.target.value = inputValue;
+    convertCurrency.call(event.target);
+}
+
+
